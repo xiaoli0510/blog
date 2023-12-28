@@ -3,16 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 博客
+favicon: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+menus:
+  - name: 首页
+    link: /
 subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+title: 'xiaoli0510的博客'
 url: https://xiaoli0510.github.io/blog
 root: /blog/
 permalink: :year/:month/:day/:title/
@@ -46,12 +51,14 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: true
+  auto_detect: true
+  line_number: false  # This value must be `false`
+  wrap: false         # This value must be `false`
+  tab_replace: '    ' # 4 spaces
+  hljs: true          # This value must be `true`
 prismjs:
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -97,7 +104,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: pure
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
